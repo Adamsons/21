@@ -39,7 +39,7 @@ namespace Blackjack2JudgementDay
 
         public bool HasSoftSeventeen()
         {
-            return Deck.Cards.Any(o => o.Type == CardType.Ace) && GetScore() == 17;
+            return Deck.Cards.Any(o => o.Type == CardType.Ace && o.Value == 11) && GetScore() == 17;
         }
     }
 }
